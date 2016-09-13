@@ -19,9 +19,9 @@ namespace TekenProgramma_001
         public Form1()
         {
             InitializeComponent();             
-            Vierkant vkVierkant = new Vierkant();           
+            //Vierkant vkVierkant = new Vierkant();           
             vierkanten = new List<Vierkant>();
-            vierkanten.Add(vkVierkant);
+            //vierkanten.Add(vkVierkant);
             canvas = pbCanvas.CreateGraphics();
         }
 

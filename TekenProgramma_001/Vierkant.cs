@@ -32,7 +32,7 @@ namespace TekenProgramma_001
         public int X
         {
             get { return x; }
-            set { x = value; }
+            //set { x = value; }
         }
 
         public int Y
