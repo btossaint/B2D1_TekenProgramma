@@ -46,5 +46,17 @@ namespace TekenProgramma_001
             get { return kleur; }
             set { kleur = value; }
         }
+
+        public void Verplaatsen()
+        {
+            this.x += 50;
+            this.y += 50;
+        }
+
+        public void Verplaatsen(int xwaarde, int ywaarde)
+        {
+            this.x = xwaarde;
+            this.y = ywaarde;
+        }
     }
 }

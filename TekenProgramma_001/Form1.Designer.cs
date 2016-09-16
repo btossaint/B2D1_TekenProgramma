@@ -30,6 +30,7 @@
         {
             this.pbCanvas = new System.Windows.Forms.PictureBox();
             this.bTeken = new System.Windows.Forms.Button();
+            this.bVerplaatsen = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pbCanvas)).BeginInit();
             this.SuspendLayout();
             // 
@@ -53,11 +54,22 @@
             this.bTeken.UseVisualStyleBackColor = true;
             this.bTeken.Click += new System.EventHandler(this.bTeken_Click);
             // 
+            // bVerplaatsen
+            // 
+            this.bVerplaatsen.Location = new System.Drawing.Point(277, 13);
+            this.bVerplaatsen.Name = "bVerplaatsen";
+            this.bVerplaatsen.Size = new System.Drawing.Size(75, 23);
+            this.bVerplaatsen.TabIndex = 2;
+            this.bVerplaatsen.Text = "Verplaatsen";
+            this.bVerplaatsen.UseVisualStyleBackColor = true;
+            this.bVerplaatsen.Click += new System.EventHandler(this.bVerplaatsen_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(597, 419);
+            this.Controls.Add(this.bVerplaatsen);
             this.Controls.Add(this.bTeken);
             this.Controls.Add(this.pbCanvas);
             this.Name = "Form1";
@@ -72,6 +84,7 @@
 
         private System.Windows.Forms.PictureBox pbCanvas;
         private System.Windows.Forms.Button bTeken;
+        private System.Windows.Forms.Button bVerplaatsen;
     }
 }
 

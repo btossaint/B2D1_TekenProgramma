@@ -59,6 +59,20 @@ namespace TekenProgramma_001
             }
                                        
         }
-        
+
+        private void bVerplaatsen_Click(object sender, EventArgs e)
+        {
+            foreach (var vk in vierkanten)
+            {
+                vk.Verplaatsen();
+                int x1 = vk.X;
+                int y1 = vk.Y;
+                Color k1 = vk.Kleur;
+
+                Rectangle vierkantPlaatje = new Rectangle(x1, y1, 50, 30);
+                Pen pen = new Pen(k1);
+                canvas.DrawRectangle(pen, vierkantPlaatje);
+            }
+        }
     }
 }
